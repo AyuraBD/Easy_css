@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+body{	
+	min-height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+h1{
+	font-size:3em;
+	color:#383535f2;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+.container{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	width:1000px;
+	align-items: center;
+}
+.container li{
+	list-style: none;
+	width:200px;
+	height:200px;
+	border:7px solid #395e66;
+	color:#395e66;
+	font-size:18px;
+	border-radius: 50%;
+	position: relative;
+	align-items: center;
+	margin:auto;
+	cursor:pointer;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.container li:hover{
+	background-color: #395e66;
+	color:#ffffff;-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+@media (max-width: 992px){
+	.container{
+		width:800px;
+	}
+	.container li{
+		list-style: none;
+		width:180px;
+		height:180px;
+	}
+}
+
+@media (max-width: 768px){
+	.container{
+		width:500px;
+	}
+	.container li{
+		list-style: none;
+		width:150px;
+		height:150px;
+	}
+}
